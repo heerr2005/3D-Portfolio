@@ -16,29 +16,27 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-end justify-end relative pb-20 pr-6 md:pb-32 md:pr-16">
       <div
-        className={`text-right z-10 transition-all duration-1000 max-w-xl ${
+        className={`text-right z-10 transition-all duration-1000 max-w-md ${
           visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
-        <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 text-glow">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-3 md:mb-4 text-glow">
           HEVILL
         </h1>
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 md:mb-8">
+        <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-4 md:mb-6">
           Creative Developer & Digital Artist
           <br />
           Crafting Immersive Digital Experiences
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-end">
+        <div className="flex flex-col sm:flex-row gap-2 md:gap-3 justify-end">
           <Button
             onClick={scrollToWork}
-            size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto"
           >
             View Work
           </Button>
           <Button
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-            size="lg"
             variant="outline"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full sm:w-auto"
           >
