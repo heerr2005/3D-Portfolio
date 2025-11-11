@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-end justify-end relative pb-20 pr-6 md:pb-32 md:pr-16">
+    <section className="min-h-screen flex items-end justify-end relative pb-12 pr-6 md:pb-16 md:pr-12">
       <div
         className={`text-right z-10 transition-all duration-1000 max-w-md ${
           visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
