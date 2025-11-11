@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Work from '@/components/Work';
 import Contact from '@/components/Contact';
+import { Toaster } from '@/components/ui/toaster';
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <About />
       <Work />
       <Contact />
+      <Toaster />
     </main>
   );
 };

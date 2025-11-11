@@ -14,25 +14,25 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative">
+    <section className="min-h-screen flex items-end justify-end relative pb-20 pr-6 md:pb-32 md:pr-16">
       <div
-        className={`text-center z-10 transition-all duration-1000 ${
+        className={`text-right z-10 transition-all duration-1000 max-w-xl ${
           visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
-        <h1 className="text-7xl md:text-9xl font-bold mb-6 text-glow">
+        <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold mb-4 md:mb-6 text-glow">
           HEVILL
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto px-6">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 md:mb-8">
           Creative Developer & Digital Artist
           <br />
           Crafting Immersive Digital Experiences
         </p>
-        <div className="flex gap-4 justify-center px-6">
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-end">
           <Button
             onClick={scrollToWork}
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto"
           >
             View Work
           </Button>
@@ -40,7 +40,7 @@ const Hero = () => {
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
             size="lg"
             variant="outline"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full sm:w-auto"
           >
             Learn More
           </Button>

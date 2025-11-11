@@ -15,11 +15,18 @@ const SplineBackground = () => {
         #spline-watermark,
         .spline-watermark,
         [class*="watermark"],
-        a[href*="spline.design"] {
+        a[href*="spline.design"],
+        a[href*="spline"],
+        div[style*="position: absolute"][style*="bottom"],
+        canvas + div,
+        iframe + div {
           display: none !important;
           opacity: 0 !important;
           visibility: hidden !important;
           pointer-events: none !important;
+          width: 0 !important;
+          height: 0 !important;
+          overflow: hidden !important;
         }
       `}</style>
     </div>
