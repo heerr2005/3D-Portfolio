@@ -11,6 +11,8 @@ A modern, interactive 3D portfolio website showcasing creative work and technica
 
 **[View Live Portfolio](https://3d-portfolio-jade-phi.vercel.app/)**
 
+https://github.com/user-attachments/assets/302f7b71-fea9-41bc-b176-d688ca55f799
+
 ## ✨ Features
 
 - **Interactive 3D Graphics** - Immersive Three.js animations and visual effects
