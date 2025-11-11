@@ -1,73 +1,200 @@
-# Welcome to your Lovable project
+# 🌟 3D Developer Portfolio
 
-## Project info
+A modern, interactive 3D portfolio website showcasing creative work and technical skills through immersive visual experiences. Built with cutting-edge web technologies to deliver stunning animations and seamless user interactions.
 
-**URL**: https://lovable.dev/projects/f2ba94f6-75fb-4d4f-8e31-090481f78727
+![Portfolio Preview](https://img.shields.io/badge/Status-Live-success)
+![React](https://img.shields.io/badge/React-18+-blue)
+![Three.js](https://img.shields.io/badge/Three.js-WebGL-orange)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)
 
-## How can I edit this code?
+## 🚀 Live Demo
 
-There are several ways of editing your application.
+**[View Live Portfolio](https://3d-portfolio-jade-phi.vercel.app/)**
 
-**Use Lovable**
+## ✨ Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f2ba94f6-75fb-4d4f-8e31-090481f78727) and start prompting.
+- **Interactive 3D Graphics** - Immersive Three.js animations and visual effects
+- **Smooth Animations** - Fluid transitions powered by Framer Motion
+- **Responsive Design** - Optimized experience across all devices
+- **Dynamic Content** - React-based architecture for easy content management
+- **Contact Integration** - Functional contact form with EmailJS
+- **Performance Optimized** - Fast loading times and smooth 60fps animations
+- **Modern UI/UX** - Clean, contemporary design with intuitive navigation
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+### Core Technologies
+- **React.js** - Frontend framework
+- **Three.js** - 3D graphics and WebGL rendering
+- **React Three Fiber** - React renderer for Three.js
+- **React Three Drei** - Useful helpers for React Three Fiber
+- **Vite** - Build tool and dev server
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Styling & Animation
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Additional Libraries
+- **React Router DOM** - Client-side routing
+- **EmailJS** - Contact form functionality
+- **React Vertical Timeline** - Experience timeline component
+- **React Tilt** - Parallax tilt effects
 
-Follow these steps:
+## 📁 Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```
+3d-portfolio/
+├── public/
+│   └── assets/          # 3D models, textures, images
+├── src/
+│   ├── assets/          # Static assets
+│   ├── components/      # React components
+│   │   ├── canvas/      # 3D canvas components
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Tech.jsx
+│   │   └── Works.jsx
+│   ├── constants/       # Configuration and data
+│   ├── hoc/            # Higher-order components
+│   ├── utils/          # Utility functions
+│   ├── App.jsx         # Main app component
+│   ├── index.css       # Global styles
+│   └── main.jsx        # Entry point
+├── .env.example        # Environment variables template
+├── package.json
+├── tailwind.config.js
+└── vite.config.js
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Getting Started
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Prerequisites
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Ensure you have the following installed:
+- **Node.js** (v18 or higher)
+- **npm** or **yarn**
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/3d-portfolio.git
+cd 3d-portfolio
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Set up environment variables**
+
+Create a `.env` file in the root directory:
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+Get your EmailJS credentials from [EmailJS Dashboard](https://www.emailjs.com/)
+
+4. **Run the development server**
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🔧 Build for Production
 
-**Use GitHub Codespaces**
+Create an optimized production build:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+Preview the production build locally:
 
-This project is built with:
+```bash
+npm run preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🌐 Deployment
 
-## How can I deploy this project?
+This project is configured for seamless deployment on Vercel:
 
-Simply open [Lovable](https://lovable.dev/projects/f2ba94f6-75fb-4d4f-8e31-090481f78727) and click on Share -> Publish.
+1. Push your code to GitHub
+2. Import the project on [Vercel](https://vercel.com)
+3. Add environment variables in Vercel dashboard
+4. Deploy!
 
-## Can I connect a custom domain to my Lovable project?
+Alternative deployment options:
+- **Netlify**
+- **GitHub Pages**
+- **AWS S3 + CloudFront**
 
-Yes, you can!
+## 🎨 Customization
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Update Personal Information
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Edit `src/constants/index.js` to customize:
+- Personal details
+- Work experience
+- Projects
+- Skills and technologies
+- Testimonials
+
+### Modify 3D Models
+
+Replace 3D models in `public/assets/`:
+- Support formats: `.gltf`, `.glb`
+- Optimize models before adding (use [glTF Pipeline](https://github.com/CesiumGS/gltf-pipeline))
+
+### Styling
+
+Modify Tailwind configuration in `tailwind.config.js` for:
+- Color schemes
+- Fonts
+- Spacing
+- Breakpoints
+
+## ⚡ Performance Optimization
+
+- **Code Splitting** - Vite automatically splits vendor chunks
+- **Lazy Loading** - 3D models load on demand
+- **Image Optimization** - Compressed assets for faster loading
+- **Tree Shaking** - Removes unused code
+- **Caching** - Static assets cached with hashed filenames
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Three.js](https://threejs.org/) - 3D graphics library
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) - React renderer for Three.js
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [EmailJS](https://www.emailjs.com/) - Email service
+
+## 📧 Contact
+
+For questions or feedback, reach out via the contact form on the portfolio website.
+
+---
+
+**Built with ❤️ using React, Three.js, and modern web technologies**
